@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+	
+	<com.google.android.maps.MapView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/map_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/crearev"
+	    android:apiKey="061QTva6GNDcZAw-FysfI5YwiBPtC97Dux22cYw"
+	    android:clickable="true"
+	    android:enabled="true" />
+
+	<Button
+	    android:id="@+id/vereventos"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:text="eventos" />
+
+	<Button
+	    android:id="@+id/Vsatelital"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/map_view"
+	    android:layout_alignParentRight="true"
+	    android:text="V Satelital" />
+
+	<Button
+	    android:id="@+id/verpersonas"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/vereventos"
+	    android:text="Personas" />
+
+	<Button
+	    android:id="@+id/crearev"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_toLeftOf="@+id/Vsatelital"
+	    android:text="Crear evento" />
+		 
+</RelativeLayout>
+	
+    
